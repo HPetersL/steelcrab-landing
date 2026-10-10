@@ -1,0 +1,35 @@
+/* Efecto Acero Brillante (Tipo "Steel" y las tenazas del logo) */
+.bg-acero {
+    background: linear-gradient(
+        to bottom, 
+        #ffffff 0%, 
+        #d1d5db 45%, 
+        #4b5563 48%, 
+        #9ca3af 52%, 
+        #e5e7eb 100%
+    );
+    border: 1px solid #374151;
+    box-shadow: inset 0px 1px 3px rgba(255,255,255,0.8), 0 4px 6px rgba(0,0,0,0.5);
+    color: #111827; 
+}
+
+/* Efecto Rojo Brillante (Tipo "Crab" y el cuerpo del cangrejo del logo) */
+.bg-rojo-crab {
+    background: linear-gradient(
+        to bottom, 
+        #ff7b7b 0%, 
+        #dc2626 45%, 
+        #7f1d1d 48%, 
+        #b91c1c 52%, 
+        #ef4444 100%
+    );
+    border: 1px solid #450a0a;
+    box-shadow: inset 0px 1px 3px rgba(255,255,255,0.5), 0 4px 6px rgba(0,0,0,0.5);
+    color: white; 
+}
+
+.texto-footer-destacado {
+    color: #000000; /* Negro absoluto */
+    font-weight: 800; /* Extra negrita */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.9); /* Sombra blanca para resaltar sobre el acero */
+}

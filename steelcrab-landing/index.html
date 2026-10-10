@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteelCrab - Barras de Remolque</title>
+    
+    <!-- Enlace a Tailwind CSS para diseño rápido -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Enlace a tu archivo CSS personalizado (para los efectos metalizados y rojos) -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="bg-[#1a1a1a] text-gray-200"> <!-- Fondo oscuro por defecto -->
+
+    <!-- ======================= -->
+    <!-- AQUÍ IRÁ EL ENCABEZADO Y MENÚ -->
+    <!-- ======================= -->
+    <header class="w-full flex flex-col items-center justify-center p-6 border-b border-gray-700">
+        
+        <!-- LOGO (Reemplaza el src con la ruta de tu logo SteelCrab) -->
+        <div class="mb-6">
+            <img src="Logo_SteelCrab.jpg" alt="Logo SteelCrab" class="h-52 object-contain drop-shadow-lg">
+        </div>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav class="flex flex-wrap justify-center gap-3 md:gap-6">
+            <!-- Botón Inicio -->
+            <a href="#inicio" class="bg-rojo-crab px-4 py-2 rounded-lg font-bold shadow-md hover:scale-105 transition-transform text-sm md:text-base">
+                Inicio
+            </a>
+
+            <!-- Botón Productos (Deshabilitado por ahora) -->
+            <button disabled class="bg-gray-600 px-4 py-2 rounded-lg font-bold opacity-50 cursor-not-allowed shadow-md text-sm md:text-base text-gray-300 border border-gray-500">
+                Productos
+            </button>
+
+            <!-- Botón Manuales -->
+            <a href="#manuales" class="bg-rojo-crab px-4 py-2 rounded-lg font-bold shadow-md hover:scale-105 transition-transform text-sm md:text-base">
+                Manuales
+            </a>
+
+            <!-- Botón Tiendas (Redirige a otra página, asumo tiendas.html) -->
+            <a href="tiendas.html" class="bg-rojo-crab px-4 py-2 rounded-lg font-bold shadow-md hover:scale-105 transition-transform text-sm md:text-base">
+                Tiendas
+            </a>
+
+            <!-- Botón Contacto (Abre el modal) -->
+            <button id="btnAbrirModal" class="bg-rojo-crab px-4 py-2 rounded-lg font-bold shadow-md hover:scale-105 transition-transform text-sm md:text-base">
+                Contacto
+            </button>
+        </nav>
+        
+    </header>
+
+    <!-- ======================= -->
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="inicio" class="container mx-auto px-4 py-12 flex flex-col gap-16">
+        
+        <!-- Fila 1: Imagen a la izquierda, Texto a la derecha -->
+        <section class="flex flex-col md:flex-row items-stretch gap-8">
+            <!-- Contenedor Imagen 1 -->
+            <div class="w-full md:w-1/2 p-2">
+                <div class="w-full flex items-center justify-center">
+                    <img src="barra_inst_trasera.jpg" alt="Logo SteelCrab"
+                        class="h-80 object-contain drop-shadow-lg rounded-lg mx-auto">
+                    </div>
+            </div>
+            
+            <!-- Contenedor Texto 1 -->
+            <div class="w-full md:w-1/2 p-2 space-y-4 text-right md:text-left">
+                <div class="text-lg font-bold text-white-800"> •Es un sistema de remolque seguro, resistente y confiable, diseñado para vehículos livianos (hasta 4.000 Kg. según Ley de Tránsito).</div>
+                <div class="text-lg font-bold text-white-800"> •Es rígido y firme, sin los inconvenientes de los elementos flexibles como cuerdas, cadenas o cables.</div>
+                <div class="text-lg font-bold text-white-800"> •Permite el remolque sin necesidad que el vehículo remolcado tenga que frenar durante la marcha.</div>
+                <div class="text-lg font-bold text-white-800"> •Es integralmente fabricado bajo los más altos estándares de calidad.</div>
+                <div class="text-lg font-bold text-white-800"> •Los componentes poseen una resistencia máxima a la tracción certificada, lo que garantiza resistencia al remolque de cualquier vehículo liviano.</div>
+                <div class="text-lg font-bold text-white-800"> •Por su peso, diseño y tamaño, "SteelCrab" es un producto universal, compatible y enganchable a todo vehículo liviano (*ver nota).</div>
+            </div>
+        </section>
+
+        <!-- Fila 2: Texto a la izquierda, Imagen a la derecha -->
+        <section class="flex flex-col md:flex-row-reverse items-center gap-8">
+            <!-- Contenedor Imagen 2 -->
+            <div class="w-full md:w-1/2 p-2">
+                <div class="w-full flex items-center justify-center">
+                    <img src="barra_inst_frontal.jpg" alt="Logo SteelCrab"
+                        class="h-80 object-contain drop-shadow-lg rounded-lg mx-auto">
+                    </div>
+            </div>
+            
+            <!-- Contenedor Texto 2 -->
+            <div class="w-full md:w-1/2 p-2 space-y-4 text-right md:text-left">
+                <div class="text-lg font-bold text-white-800"> •Puede ser instalado de forma lateral, central o diagonal, según la ubicación de los dispositivos de remolque.</div>
+                <div class="text-lg font-bold text-white-800"> •Se puede utilizar en caminos pavimentados o disparejos (ripiados), planos o con pendientes de hasta 10%.</div>
+                <div class="text-lg font-bold text-white-800"> •Permite una excelente maniobrabilidad de giros, gracias a sus grilletes "DuraFist" con pasadores.</div>
+                <div class="text-lg font-bold text-white-800"> •Es un producto muy fácil y rápido de instalar o desinstalar. Además, es estético y visualmente atractivo.</div>
+                <div class="text-lg font-bold text-white-800"> •Se dobla y guarda en una funda, haciendo simple su transporte dentro del porta-maleta de cualquier vehículo.</div>
+            </div>
+        </section>
+
+        <!-- ======================= -->
+        <!-- AQUÍ IRÁ EL VIDEO -->
+        <!-- ======================= -->
+        <!-- ======================= -->
+        <!-- SECCIÓN: VIDEO DEL PRODUCTO -->
+        <!-- ======================= -->
+        <section class="w-full mt-12 mb-8">
+            <div class="w-full max-w-4xl mx-auto bg-gray-900 border-2 border-gray-600 rounded-lg overflow-hidden shadow-lg shadow-black aspect-video flex items-center justify-center relative">
+                
+                <!-- Si tienes el video en YouTube, descomenta este iframe y borra el div interior -->
+                <!-- <iframe class="w-full h-full absolute top-0 left-0" src="https://www.youtube.com/embed/TU_ID_DEL_VIDEO" title="Video del producto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                
+                <!-- Contenedor temporal (borrar cuando pongas el video real) -->
+                <div class="text-center text-gray-400 p-8">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <p class="text-lg font-bold">video del producto</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= -->
+        <!-- SECCIÓN: MANUALES Y RESEÑAS -->
+        <!-- ======================= -->
+        <section id="manuales" class="w-full mt-8 border-2 border-gray-600 p-6 md:p-10 rounded-lg bg-gray-800/50 shadow-inner">
+            <h2 class="text-2xl font-bold mb-8 text-center text-gray-300">Respaldo Técnico y Manual de Uso</h2>
+            
+            <!-- Contenedor Grid (2 Columnas en PC, 1 Columna en Móvil) -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                
+                <!-- TARJETA 1: CERTIFICACIÓN -->
+                <div class="bg-gray-900 border border-gray-700 rounded-lg p-6 flex flex-col md:flex-row gap-6 items-center shadow-md">
+                    <!-- Icono de Escudo de Seguridad -->
+                    <div class="flex-shrink-0 text-red-500">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    
+                    <!-- Texto -->
+                    <div class="flex-grow text-sm text-gray-300 space-y-2">
+                        <h3 class="text-lg font-bold text-white uppercase tracking-wide">Diseño estructural sometido a Análisis de Elementos Finitos (FEA).</h3>
+                        <p><strong>Capacidad: 4.100 Kg</strong></p>
+                        <p>El estudio oficial certifica que el diseño optimizado (acero de 1” schedule 80) soporta las exigencias de vehículos semi-pesados de hasta 4,1 toneladas.</p>
+                    </div>
+                    
+                    <!-- Botón de Descarga -->
+                    <div class="flex-shrink-0 mt-4 md:mt-0">
+                        <!-- Recuerda cambiar "ruta_certificado.pdf" -->
+                        <a href="ESTUDIO ELEMENTO FINITO IE-079-2007-STC.pdf" target="_blank" class="bg-rojo-crab block px-4 py-3 rounded-lg font-bold shadow-md hover:scale-105 transition-transform text-center whitespace-nowrap text-sm">
+                            Ver Estudio <br><span class="text-xs font-normal">(PDF Oficial)</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- TARJETA 2: MANUAL DE USUARIO -->
+                <div class="bg-gray-900 border border-gray-700 rounded-lg p-6 flex flex-col md:flex-row gap-6 items-center shadow-md">
+                    <!-- Icono de Libro/Manual -->
+                    <div class="flex-shrink-0 text-red-500">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    
+                    <!-- Texto -->
+                    <div class="flex-grow text-sm text-gray-300 space-y-2">
+                        <h3 class="text-lg font-bold text-white uppercase tracking-wide">Manual de Uso e Instalación</h3>
+                        <p>Aprende paso a paso cómo instalar y utilizar tu barra SteelCrab de forma correcta y segura.</p>
+                        <p>Incluye recomendaciones de mantenimiento, advertencias de seguridad y guía de ensamblaje rápido.</p>
+                    </div>
+                    
+                    <!-- Botón de Descarga -->
+                    <div class="flex-shrink-0 mt-4 md:mt-0">
+                        <!-- Recuerda cambiar "ruta_manual.pdf" -->
+                        <a href="manual_de_uso_barraremolque.pdf" target="_blank" class="bg-rojo-crab block px-4 py-3 rounded-lg font-bold shadow-md hover:scale-105 transition-transform text-center whitespace-nowrap text-sm">
+                            Ver Manual <br><span class="text-xs font-normal">(Descargar PDF)</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================= -->
+    <!-- PIE DE PÁGINA (FOOTER) -->
+    <!-- ======================= -->
+    <footer class="bg-acero w-full mt-12 py-8 border-t-[3px] border-gray-900 sombra-logo">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            
+            <!-- Izquierda: Derechos Reservados -->
+            <div class="text-center md:text-left text-base md:text-lg tracking-wide texto-footer-destacado">
+                <p>Fabricado en China por Desainco SPA bajo licencia SteelCrab &copy; 2026</p>
+                <p>Contacto: desaincospa@gmail.com</p>
+                <p>Santiago de Chile ¤ Producto Chileno</p>
+            </div>
+
+            <!-- Derecha: Redes Sociales -->
+            <div class="flex flex-col items-center md:items-end gap-2">
+                <p class="text-xs font-bold uppercase tracking-wider" style="text-shadow: 1px 1px 0px rgba(255,255,255,0.7);">Síguenos en nuestras redes</p>
+                <div class="flex gap-4">
+                    <!-- Facebook (Caja blanca con borde negro según boceto) -->
+                    <a href="#" class="w-10 h-10 bg-white border-2 border-black rounded flex items-center justify-center hover:bg-gray-200 transition-colors shadow-md">
+                        <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                    </a>
+                    
+                    <!-- Instagram -->
+                    <a href="#" class="w-10 h-10 bg-white border-2 border-black rounded flex items-center justify-center hover:bg-gray-200 transition-colors shadow-md">
+                        <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                    
+                    <!-- LinkedIn -->
+                    <a href="#" class="w-10 h-10 bg-white border-2 border-black rounded flex items-center justify-center hover:bg-gray-200 transition-colors shadow-md">
+                        <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    <!-- ======================= -->
+    <!-- MODAL DE CONTACTO -->
+    <!-- ======================= -->
+    <!-- Fondo oscuro semitransparente que cubre todo. Inicialmente oculto (hidden) -->
+    <div id="modalContacto" class="fixed inset-0 bg-black/80 hidden z-50 flex items-center justify-center p-4">
+        
+        <!-- Caja del Modal (Usa la clase bg-acero que creamos en CSS) -->
+        <div class="bg-acero w-full max-w-lg rounded-xl shadow-2xl sombra-logo overflow-hidden relative">
+            
+            <!-- Botón de Cerrar (X) arriba a la derecha -->
+            <button id="btnCerrarModal" class="absolute top-4 right-4 text-black hover:text-red-600 font-bold text-xl transition-colors">
+                &times;
+            </button>
+            
+            <!-- Contenido del Modal -->
+            <div class="p-8">
+                <h2 class="text-2xl font-extrabold text-black mb-6 texto-footer-destacado text-center border-b-2 border-gray-500 pb-2">Contáctanos</h2>
+                
+                <form id="formularioContacto" class="space-y-4">
+                    <!-- Campo Nombre -->
+                    <div>
+                        <label for="nombre" class="block text-black font-bold mb-1">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required class="w-full px-4 py-2 bg-gray-100 border border-gray-400 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-red-500 shadow-inner">
+                    </div>
+                    
+                    <!-- Campo Correo -->
+                    <div>
+                        <label for="correo" class="block text-black font-bold mb-1">Correo Electrónico</label>
+                        <input type="email" id="correo" name="correo" required class="w-full px-4 py-2 bg-gray-100 border border-gray-400 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-red-500 shadow-inner">
+                    </div>
+                    
+                    <!-- Campo Mensaje -->
+                    <div>
+                        <label for="mensaje" class="block text-black font-bold mb-1">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required class="w-full px-4 py-2 bg-gray-100 border border-gray-400 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-red-500 shadow-inner resize-none"></textarea>
+                    </div>
+                    
+                    <!-- Botón Enviar (Usa tu clase roja del cangrejo) -->
+                    <button type="submit" class="w-full bg-rojo-crab text-white font-bold py-3 px-4 rounded-lg shadow-md hover:scale-[1.02] transition-transform mt-4">
+                        Enviar Mensaje
+                    </button>
+                    
+                    <!-- Mensaje de éxito oculto -->
+                    <p id="mensajeExito" class="text-green-700 font-bold text-center mt-4 hidden bg-green-200 py-2 rounded">¡Mensaje enviado con éxito!</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Enlace a tu archivo JS personalizado (para el modal de contacto) -->
+    <script src="js/main.js"></script>
+</body>
+</html>
